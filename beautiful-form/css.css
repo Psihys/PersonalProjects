@@ -1,0 +1,185 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2f; /* Dark purple background */
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #2b2b3d; /* Darker purple background */
+    border: 1px solid #444; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+}
+
+.signUP, .signIN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #6a1b9a; /* Deep purple for the side panels */
+}
+
+.signUP {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.signIN {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 28px;
+}
+
+.form {
+    text-align: left;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ff4081; /* Pink border for input */
+    border-radius: 5px;
+    background-color: #1e1e2f; /* Dark input background */
+    color: #fff;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff4081; /* Pink border on focus */
+    outline: none;
+}
+
+.button {
+    padding: 12px 20px;
+    background-color: #ff4081; /* Pink button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+    visibility: hidden;
+}
+
+.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 0s;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .signUP, .signIN {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .form{
+        align-items: center;
+    }
+
+    .register {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+}
