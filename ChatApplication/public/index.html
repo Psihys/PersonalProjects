@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./Styles/reset.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <aside>
+        <h1>Chat Rooms:</h1>
+        <button class="chats" id="working-chat">
+            <span class="material-icons"> group </span>
+            <p>Working chat</p>
+        </button>
+
+        <button class="chats" id="chating-chat">
+            <span class="material-icons"> work </span>
+            <p>Just for chatting</p>
+        </button>
+    </aside>
+    
+    <main>
+        <div class="messages" id="messages"></div>
+        <form class="form" action="">
+            <input id="message" type="text" placeholder="Type a message">
+            <button class="button" id="send" type="button">Send</button>
+        </form>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./Scripts/index.js"></script>
+</body>
+</html>
