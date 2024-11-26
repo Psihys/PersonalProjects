@@ -62,3 +62,4 @@ document.getElementById('message').addEventListener('keypress', (event) => {
         }
     }
 });
+

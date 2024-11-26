@@ -11,14 +11,34 @@
 <body>
 
     <aside>
-        <h1>Chat Rooms:</h1>
+        <nav class="navigation">
+            <h1>Chat Rooms:</h1>
+            <ul class="menu">
+                <li>
+                    <button id="setting-button" class="settings">
+                        <span class="material-icons">
+                            settings
+                        </span>
+                    </button>
+                </li>
+                <li>
+                    <button id="add-button" class="settings">
+                        <span class="material-icons">
+                            add
+                        </span>
+                    </button>
+                </li>
+            </ul>
+            
+        </nav>
+        
         <button class="chats" id="working-chat">
-            <span class="material-icons"> group </span>
+            <span class="material-icons"> work </span>
             <p>Working chat</p>
         </button>
 
         <button class="chats" id="chating-chat">
-            <span class="material-icons"> work </span>
+            <span class="material-icons"> group </span>
             <p>Just for chatting</p>
         </button>
     </aside>

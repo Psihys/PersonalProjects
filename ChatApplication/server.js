@@ -28,15 +28,20 @@ io.on('connection', (socket) => {
     });
 
     // Listen for incoming chat messages and broadcast them to the room
-    socket.on('chat_message', (data) => {
-        if (!data || !data.message || !data.room) {
-            console.error('Invalid message data received:', data);
-            return;
-        }
-
-        const { message, room } = data;
-        console.log(`Message in room ${room}: ${message}`);
-        io.to(room).emit('chat_message', message);
+    socket.on('chat_message', (msg) => {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message');
+    
+        // Split the message into words and add each word on a new line
+        const words = msg.split(' ');
+        words.forEach((word) => {
+            const wordSpan = document.createElement('span');
+            wordSpan.textContent = word;
+            wordSpan.style.display = 'block'; // Ensure each word is on a new line
+            messageDiv.appendChild(wordSpan);
+        });
+    
+        document.getElementById('messages').appendChild(messageDiv);
     });
 
     socket.on('disconnect', () => {
