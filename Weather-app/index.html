@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <input type="text" id="locationInput" placeholder="Enter a city">
-        <button id="searchButton">Search</button>
-        <div class="weather-info">
-            <h2 id="location"></h2>
-            <p id="temperature"></p>
-            <p id="description"></p>
-        </div>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="search">
+      <input type="text" id="city" placeholder="Enter city">
+      <button id="searchBtn">Search</button>
     </div>
-    <script src="script.js"></script>
-    <script src="./index.js"></script>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div class="current-weather">
+      <h2 id="cityName">City Name</h2>
+      <p id="temperature">Temperature: --°C</p>
+      <p id="condition">Condition: --</p>
+      <img id="weatherIcon" src="" alt="Weather Icon">
+    </div>
+    <div class="forecast">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-days" id="forecastContainer"></div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
 </body>
 </html>
-

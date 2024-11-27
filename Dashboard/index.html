@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="./Styles/reset.css">
+    <link rel="stylesheet" href="./Styles/main.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- sidebar section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="./images/—Pngtree—symbolic significance smart logo solutions_15379534.png" alt="Logo">
+                    <h2>Asmr<span class="danger">Prog</span></h2>
+
+                </div>
+                <div class="close" id="close-button">
+                    <span class="material-icons">
+                        close
+                        </span>
+                    
+                </div>
+
+
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        person
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        history
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons">
+                        query_stats
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        mail
+                    </span>
+                    <h3>Tickets</h3>
+                    <div class="message-count">27</div>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        inventory
+                    </span>
+                    <h3>Sale List</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        report
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        login
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+            
+        </aside>
+
+        <!-- end of sidebar-->
+         <!-- main content section -->
+        <main>
+            <h1>Analytics</h1>
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total sales</h3>
+                            <h1>$65,034</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <script src="./Scripts/orders.js"></script>
+    <script src="./Scripts/index.js"></script>
+</body>
+</html>
