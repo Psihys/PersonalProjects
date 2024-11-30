@@ -22,12 +22,20 @@
           </div>
           <div class="nav-list">
             <ul class="nav-links">
-              <li class="item-link"><a href="#">Home</a></li>
-              <li class="item-link"><a href="#">Our Shop</a></li>
-              <li class="item-link"><a href="#">Product Details</a></li>
-              <li class="item-link"><a href="#">Contact</a></li>
+                <li class="item-link">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="item-link">
+                  <a class="nav-link" href="./OurShop/our-shop.html">Our Shop</a>
+                </li>
+                <li class="item-link">
+                  <a class="nav-link" href="./Products/products.html">Product Details</a>
+                </li>
+                <li class="item-link">
+                  <a class="nav-link" href="./Contacts/contacts.html">Contact</a>
+                </li>           
               <li class="item-link">
-                <button class="sign-button">Sign IN</button>
+                <button id="sign-in-button" class="sign-button">Sign IN</button>
               </li>
             </ul>
           </div>
@@ -36,7 +44,11 @@
         <div class="header-main">
           <div class="header-text">
             <p class="welcome">Welcome to our Online Store!</p>
-            <h1>Best <span>Gaming</span> Site Ever</h1>
+            <h1>
+              Best
+              <span>Gaming</span>
+              Site Ever
+            </h1>
             <p class="discription">
               Explore the best deals on gaming gear, accessories, and the latest
               game releases. Whether you're a casual or hardcore gamer, we
@@ -49,7 +61,7 @@
               <button class="search-button" type="submit">
                 Search now
                 <div class="search-icon">
-                  <span class="material-symbols-outlined"> search </span>
+                  <span class="material-symbols-outlined">search</span>
                 </div>
               </button>
             </form>
@@ -178,15 +190,14 @@
           </div>
 
           <button class="slider-button prev">
-              <span class="material-symbols-outlined"> arrow_back </span>
-            </button>
-            <button class="slider-button next">
-              <span class="material-symbols-outlined"> arrow_forward </span>
-            </button>
+            <span class="material-symbols-outlined">arrow_back</span>
+          </button>
+          <button class="slider-button next">
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
           <!-- Slider Container -->
           <div class="games-slider">
             <!-- Navigation buttons -->
-            
 
             <ul class="games-list">
               <li class="game-item">
@@ -220,11 +231,11 @@
                 <a href="">
                   <div class="game-container">
                     <div class="game-image">
-                      <img src="./images/most-popular/card1.jpg" alt="" />
+                      <img src="./images/most-popular/card2.jpg" alt="" />
                     </div>
 
                     <div class="game-info">
-                      <h3 class="game-title">The Witcher 3</h3>
+                      <h3 class="game-title">GTA-5</h3>
                     </div>
                   </div>
                 </a>
@@ -234,11 +245,11 @@
                 <a href="">
                   <div class="game-container">
                     <div class="game-image">
-                      <img src="./images/most-popular/card1.jpg" alt="" />
+                      <img src="./images/most-popular/card3.jpg" alt="" />
                     </div>
 
                     <div class="game-info">
-                      <h3 class="game-title">The Witcher 3</h3>
+                      <h3 class="game-title">CS-Go 2</h3>
                     </div>
                   </div>
                 </a>
@@ -248,11 +259,39 @@
                 <a href="">
                   <div class="game-container">
                     <div class="game-image">
-                      <img src="./images/most-popular/card1.jpg" alt="" />
+                      <img src="./images/most-popular/card4.jpg" alt="" />
                     </div>
 
                     <div class="game-info">
-                      <h3 class="game-title">The Witcher 3</h3>
+                      <h3 class="game-title">Dota 2</h3>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="game-item">
+                <a href="">
+                  <div class="game-container">
+                    <div class="game-image">
+                      <img src="./images/most-popular/card5.jpg" alt="" />
+                    </div>
+
+                    <div class="game-info">
+                      <h3 class="game-title">Stalker 2</h3>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="game-item">
+                <a href="">
+                  <div class="game-container">
+                    <div class="game-image">
+                      <img src="./images/most-popular/card6.jpg" alt="" />
+                    </div>
+
+                    <div class="game-info">
+                      <h3 class="game-title">Gensin Impact</h3>
                     </div>
                   </div>
                 </a>
@@ -264,6 +303,47 @@
       </section>
     </main>
 
+    <footer>
+      <div class="footer-content">
+        <h4 class="footer-title">
+          <span class="material-symbols-outlined">copyright</span>
+          GameHub 2021. All rights reserved.
+        </h4>
+        <ul class="footer-links">
+          <li class="links-item">
+            <a href="#">
+              <img src="./images/icons/instagram.png" alt="instagram" />
+            </a>
+          </li>
+
+          <li class="links-item">
+            <a href="#">
+              <img src="./images/icons/facebok.png" alt="instagram" />
+            </a>
+          </li>
+
+          <li class="links-item">
+            <a href="#">
+              <img src="./images/icons/whatsapp.png" alt="instagram" />
+            </a>
+          </li>
+
+          <li class="links-item">
+            <a href="#">
+              <img src="./images/icons/gmail.png" alt="instagram" />
+            </a>
+          </li>
+
+          <li class="links-item">
+            <a href="#">
+              <img src="./images/icons/github.png" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./Scripts/script.js"></script>
+    <script src="./Scripts/slider.js"></script>
+    <script src="./Scripts/sign-in-button.js"></script>
   </body>
 </html>
