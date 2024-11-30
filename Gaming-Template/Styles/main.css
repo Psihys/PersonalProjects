@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --default-text-color: white;
+  --another-default-text-color: black;
+
+  --background-header: rgb(70, 23, 104);
+  --background-main: white;
+
+  --link-hover-color: rgb(139, 69, 139);
+
+  --button-color: purple;
+
+  --background-cards-color: grey;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-main);
+  color: var(--text-color);
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+}
+
+.header {
+  background-color: var(--background-header);
+  background-size: cover;
+  padding: 15px;
+  color: white;
+  margin: auto;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.header-size {
+  display: block;
+  max-width: 1080px;
+  min-height: 500px;
+  margin: auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+
+.nav-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-image {
+  border-radius: 50%;
+}
+
+.nav-list {
+  max-width: 700px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  gap: 30px;
+}
+.item-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item-link a:hover {
+  background-color: var(--link-hover-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+.item-link a {
+  color: var(--default-text-color);
+}
+
+.sign-button {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+
+  cursor: pointer;
+
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: var(--button-color);
+  width: 100px;
+  padding: 2px;
+
+  transition: background-color 0.4s ease-out, color 0.4s ease-out; /* Smooth transition for both color and background */
+}
+
+.sign-button:hover {
+  background-color: transparent;
+  color: var(
+    --button-color
+  ); /* Optional: Changes text color on hover for better contrast */
+}
+
+.header-main {
+  width: 1080px;
+  height: auto;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.header-text {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.welcome {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.discription {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.searchbar {
+  margin-top: 40px;
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: var(--background-main);
+  padding-left: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  background-color: var(--button-color);
+  border-radius: 15px;
+
+  height: 40px;
+  padding-right: 5px;
+  padding-left: 10px;
+
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.best-game {
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.best-game img {
+  width: 100%; /* Ensure image width fits container */
+  height: 100%; /* Ensure image height fits container */
+}
+
+/* Main Section */
+
+main {
+  margin-top: 150px;
+}
+
+.trends {
+  margin: auto;
+  max-width: 1080px;
+  height: auto;
+}
+
+.trend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.trend-title {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.view-all-button {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: var(--button-color);
+  transition: background-color 0.4s ease-out, color 0.4s ease-out; /* Smooth transition for both color and background */
+}
+
+.view-all-button:hover {
+  background-color: transparent;
+  color: var(--button-color);
+}
+
+.trend-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item {
+  width: 250px;
+  min-height: 300px;
+  background-color: var(--background-cards-color);
+
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2),
+    /* Subtle small shadow */ 4px 4px 10px rgba(0, 0, 0, 0.25),
+    /* Soft medium shadow */ 0px 8px 20px rgba(0, 0, 0, 0.3),
+    /* Larger shadow for depth */ 0px 12px 40px rgba(0, 0, 0, 0.15),
+    /* Large diffuse shadow */ 0px 16px 60px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+.list-item:hover {
+  transform: scale(1.05); /* Scales the card up by 5% */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3),
+    /* Increase shadow intensity on hover */ 4px 4px 15px rgba(0, 0, 0, 0.35),
+    /* Enhance shadow depth */ 0px 10px 25px rgba(0, 0, 0, 0.4),
+    /* Larger shadow for deeper effect */ 0px 14px 45px rgba(0, 0, 0, 0.2),
+    /* Larger, more diffuse shadow */ 0px 18px 70px rgba(0, 0, 0, 0.15); /* Very large shadow for extra floating effect */
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+
+  border-radius: 25px;
+}
+
+.game-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 20px;
+}
+
+.game-action {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--another-default-text-color);
+}
+
+.game-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--another-default-text-color);
+}
+
+.basket-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--button-color);
+  color: var(--background-main);
+  border-radius: 50%;
+}
+
+/* Main second section */
+
+.section-background {
+    margin-top: 150px;
+    background-color: var(--background-header);
+    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    position: relative;
+
+}
+
+.most-played {
+    margin: auto;
+    max-width: 1080px;
+    height: auto;
+}
+
+.top-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.top-games-title {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+/* Slider Styles */
+.games-slider {
+    position: relative;
+    overflow: hidden; /* Hide overflow for a clean effect */
+}
+
+.games-list {
+    display: flex;
+    height: 400px;
+    gap: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth sliding effect */
+    width: max-content; /* Ensure the list width expands to fit all items */
+}
+
+.game-item {
+    list-style-type: none;
+    width: 250px; /* Set a fixed width for each game item */
+    background-color: var(--background-cards-color);
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
+}
+
+.game-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.game-info {
+    margin-top: 10px;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Slider Navigation buttons */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-button.prev {
+    left: 100px;
+}
+
+.slider-button.next {
+    right: 100px;
+}
+
+/* Optional Hover Effects for Game Items */
+.game-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
