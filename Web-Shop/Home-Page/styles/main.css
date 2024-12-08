@@ -1,0 +1,154 @@
+:root {
+  --default-text-color: #1a1a1a;
+  --nav-active-text-color: #ffffff;
+  --nav-text-color: #999999;
+
+  --default-button-text-color: var(--nav-active-text-color);
+  --button-hover-text-color: var(--default-text-color);
+  --button-text-color: #00b207;
+
+  --navigation-bg-color: #333333;
+}
+
+/* Header part */
+.header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.header-bar {
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+}
+
+.header-bar-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-form {
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.header-form input {
+  width: 250px;
+  height: 30px;
+  padding: 15px;
+
+  color: var(--default-text-color);
+}
+
+.header-form button {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+
+  border-radius: 15px;
+
+  background-color: orange;
+  cursor: pointer;
+}
+
+.save-products {
+  max-width: 200px;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+}
+
+.cart-total {
+}
+
+/* Navigation part */
+
+.nav {
+  width: 100%;
+  height: auto;
+  margin: auto;
+
+  background-color: var(--navigation-bg-color);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.navigation-bar {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-bar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--nav-text-color);
+}
+.navigation-bar-item a {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--nav-text-color);
+}
+
+.navigation-bar > li:first-child > a {
+    color: var(--nav-active-text-color);
+}
+
+.navigation-bar > li:first-child {
+    color: var(--nav-active-text-color);
+}
+
+.Sign-in{
+    font-size: 16px;
+    font-weight: 600;
+
+    
+    color: var(--default-button-text-color);
+}
+
+.Sign-in:hover{
+    color: var(--button-hover-text-color);
+
+    background-color: white;
+    border-radius: 25px;
+
+    padding: 10px;
+}
+
